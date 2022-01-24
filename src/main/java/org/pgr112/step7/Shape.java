@@ -3,7 +3,7 @@ package org.pgr112.step7;
 import java.awt.*;
 import java.util.HashMap;
 
-abstract class Shape {
+abstract class Shape implements Movable {
     private boolean filled;
     private Color color;
     private final int shapeIdentifier;
@@ -46,13 +46,12 @@ abstract class Shape {
         this.color = color;
     }
 
-    public abstract double getArea();
-
-
-    public abstract double getPerimeter();
-
     public int getShapeIdentifier(){
         return shapeIdentifier;
     }
+
+    public abstract double getArea();
+
+    public abstract double getPerimeter();
 
 }

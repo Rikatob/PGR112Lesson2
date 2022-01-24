@@ -27,7 +27,7 @@ class RectangleTest {
     }
     @Test
     void createRectangleFullConstructor() {
-        Rectangle rectangle = new Rectangle(4.0, 5.0, Color.BLUE, false);
+        Rectangle rectangle = new Rectangle(4.0, 5.0, Color.BLUE, false,2,2);
         assertFalse(rectangle.isFilled());
         assertEquals(rectangle.getLength(), 5.0);
         assertEquals(rectangle.getWidth(), 4.0);

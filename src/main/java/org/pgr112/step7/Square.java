@@ -7,7 +7,7 @@ public class Square extends Rectangle{
     private double side;
 
     public Square(){
-        super(1.0,1.0,Color.GREEN,true);
+        super(1.0,1.0,Color.GREEN,true,2,3);
         this.side = 1.0;
     }
 
@@ -16,8 +16,8 @@ public class Square extends Rectangle{
         this.side = side;
     }
 
-    public Square(double side, Color color, boolean filled){
-        super(side,side,color,filled);
+    public Square(double side, Color color, boolean filled, double topX, double topY){
+        super(side,side,color,filled,topX,topY);
         this.side = side;
     }
 
@@ -47,4 +47,9 @@ public class Square extends Rectangle{
                 + " Color: " + this.getColor()
                 + " Filled: " + this.isFilled();
     }
+
+    public void uniqueSquareMethod(){
+        System.out.println("This is the unique SquareMethod!");
+    }
 }
+

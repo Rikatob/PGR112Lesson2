@@ -27,7 +27,7 @@ class SquareTest {
     }
     @Test
     void createSquareFullConstructor() {
-        Square square = new Square(7.0, Color.DARK_GRAY, false);
+        Square square = new Square(7.0, Color.DARK_GRAY, false,2,2);
         assertFalse(square.isFilled());
         assertEquals(square.getLength(), 7.0);
         assertEquals(square.getWidth(), 7.0);
